@@ -1,0 +1,38 @@
+@media (max-width:1024px) {
+    .geral {
+        display: grid;
+        grid-template-areas:"header"
+                            "conteudo"
+                            "painel-secundario"
+                            "footer";
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .painel-principal .descricao .informacao img {
+        margin: 10px;
+    }
+
+    .geral-2 {
+        color: wheat;
+        grid-area: painel-secundario;
+        padding: 100px;
+    }
+
+    .geral-2 .painel-secundario .botao {
+    
+    align-self: center;
+    justify-content: center;
+    padding-left: 150px;
+    }
+
+    .rodape .social {
+        /* grid-area: footer; */
+        justify-content: center;
+        align-self: center;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+
+}
+
