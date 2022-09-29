@@ -1,38 +1,160 @@
-@media (max-width:1024px) {
-    .geral {
-        display: grid;
-        grid-template-areas:"header"
-                            "conteudo"
-                            "painel-secundario"
-                            "footer";
-        grid-template-columns: repeat(1,1fr);
+@media (max-width:1160px) {
+    .header {
+        padding-top: 30px;
     }
 
-    .painel-principal .descricao .informacao img {
-        margin: 10px;
+    .header .logo {
+        padding: 5%;
+        margin: 5px;
     }
 
-    .geral-2 {
-        color: wheat;
-        grid-area: painel-secundario;
-        padding: 100px;
+    .conteudo {
+        padding: 25%;
+        margin: 30px;
+        width: 100%;
+    }
+
+    .conteudo img {
+        width: 100%;
+    }
+
+    .conteudo .geral-2 {
+        padding: 20%;
+        margin-bottom: 0px;
+        height: 40vh;
+        position: relative;
+
+    }
+
+    .geral-2 .painel-secundario {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-wrap: wrap;
     }
 
     .geral-2 .painel-secundario .botao {
-    
-    align-self: center;
-    justify-content: center;
-    padding-left: 150px;
+        align-self: center;
+        padding: 20px;
+        padding-top: 10px;
+        width: 100%;
+
+    }
+
+    .geral-2 .painel-secundario .button:hover {
+        border-radius: 18px;
+        border: solid 1px rgb(103, 75, 176);
+        font-weight: 700;
+        font-style: italic;
+        background-color: hsl(300, 69%, 71%);
+    }
+
+    .geral-2 .painel-secundario .button {
+        width: 100%;
     }
 
     .rodape .social {
-        /* grid-area: footer; */
-        justify-content: center;
         align-self: center;
-        grid-template-columns: repeat(1,1fr);
-        
+
     }
 
+    .rodape .social a:hover {
+        border: 2px solid hsl(300, 69%, 71%);
+        ;
+    }
 
+    .rodape .social a i:hover {
+        font-weight: 700;
+        color: hsl(300, 69%, 71%);
+
+    }
+
+    @media (max-width: 768px) {
+        .header {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        .conteudo {
+            display: block;
+            padding: 25%;
+            margin: 30px;
+            width: 100%;
+            padding: 5px 10% 10% 10%;
+        }
+
+        .conteudo img {
+            width: 100%;
+        }
+
+        .conteudo .geral-2 {
+            padding: 20%;
+            margin-bottom: 0px;
+            height: 40vh;
+            position: relative;
+        }
+
+        .geral-2 .painel-secundario {
+            
+            top: 20%;
+            left: 0;
+            flex-wrap: wrap;
+        }
+
+        .geral-2 .painel-secundario .botao {
+            display: block;
+            align-self: center;
+            padding: 20px;
+            padding-top: 10px;
+            width: 100%;
+        }
+
+        .geral-2 .painel-secundario .button:hover {
+            border-radius: 18px;
+            border: solid 1px rgb(103, 75, 176);
+            font-weight: 700;
+            font-style: italic;
+            background-color: hsl(300, 69%, 71%);
+        }
+
+        .geral-2 .painel-secundario .button {
+            width: 100%;
+        }
+        .geral-2 .painel-secundario .button:hover {
+            border: solid 10px rgb(103, 75, 176);
+            font-weight: 700;
+            font-style: italic;
+            background-color: hsl(300, 69%, 71%);
+        }
+    
+        .rodape .social {
+            justify-content: center;
+        }
+
+        .rodape .social a{
+            margin: 10px;
+            margin-top: 25%;
+            font-size: 40%;
+        }
+
+        .rodape .social a i{
+            align-self: center;
+            font-size: 30px;
+            height: 50px;
+            width: 60px;
+        }
+
+        .rodape .social a:hover {
+            border: 2px solid hsl(300, 69%, 71%);
+    
+        }
+
+        .rodape .social a i:hover {
+            font-weight: 700;
+            color: hsl(300, 69%, 71%);
+
+        }
+
+    }
 }
-
